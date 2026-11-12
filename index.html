@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-css-Homework</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    .container{
+        display: grid;
+    }
+    .header{
+        display: grid;
+        background-color: darkorange;
+        grid-template-rows: 200px;
+        color: beige;
+        font-size: 50px;
+        text-align: center;
+    }
+    .footer{
+        display: grid;
+        background-color: plum;
+        grid-template-rows: 70px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu{
+        display: grid;
+        background-color: rgb(161, 255, 230);
+        grid-template-columns: 100px 100px 100px;
+        column-gap: 100px;
+        justify-content: center;
+        text-align: center;
+        font-family: Prompt , sans-serif;
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+        grid-template-rows: repeat(2,320px);
+        justify-content: space-evenly;
+        row-gap: 20px;
+        column-gap: 20px;
+        margin: 20px;
+    }
+    .item{
+        background-color: rgb(233, 231, 231);
+        display: grid;
+        border-radius: 15px;
+        grid-template-rows: 150px 30px 40px 35px;
+        grid-template-columns: 200px;
+        row-gap: 10px;
+        padding-top: 17px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn{
+        display: grid;
+        grid-template-columns: 60px 60px;
+        column-gap: 10px;
+        justify-content: center;
+    }
+    .buy_btn{
+        cursor: pointer;
+        background-color: rgb(8, 99, 184);
+        color: aliceblue;
+        border-radius: 8px;
+        transition-duration: 0.2s;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+    .buy_btn:hover{
+        background-color: rgb(0, 176, 76);
+    }
+    .detail_btn{
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        transition-duration: 0.2s;
+    }
+    .detail_btn:hover{
+        background-color: rgb(214, 214, 214);
+    }
+    .promotion{
+        order: -2;
+        background-color: red;
+    }
+    .promotion2{
+        order: -1;
+        background-color: rgb(236, 247, 86);
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>header</p>
+        </div>
+        <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Product</a>
+            <a href="./index.html">Contact</a>
+        </div>
+        <div class="main">
+            <div class="item">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 1</div>
+                <div>1,000 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 2</div>
+                <div>1,100 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 3</div>
+                <div>3,000 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 4</div>
+                <div>4,500 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item promotion">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 5</div>
+                <div>700 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 6</div>
+                <div>1,090 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 7</div>
+                <div>12,000 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 8</div>
+                <div>9,900 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 9</div>
+                <div>7,000 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item promotion2">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 10</div>
+                <div>1,300 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 11</div>
+                <div>5,500 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width: 200px; height: 150px;"><img src="product-glyph-icon-vector.jpg" alt width="160px" height="150px"></div>
+                <div>Product 12</div>
+                <div>1,400 THB</div>
+                <div class="btn">
+                    <button class="buy_btn">Buy</button>
+                    <button class="detail_btn">Detail</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>footer</p>
+        </div>
+    </div>
+</body>
+</html>
